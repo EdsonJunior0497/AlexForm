@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+
+    <div id="form">
+        <form action="">
+            <h2 class="title">Cadastro de livros</h2>
+
+            <label for="isbn">ISBN</label>
+            <div class="input">
+                <i class="fa-solid fa-book"></i>
+                <input id="isbn" type="text " placeholder="ISBN">
+            </div>
+
+            <label for="name">Nome</label>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input  id="name" type="text" placeholder="Nome">
+            </div>
+
+            <label for="pag">Pagina</label>
+            <div class="input">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                <input  id="pag"type="text" placeholder="Pagina">
+            </div>
+
+            <label for="quant">Quantidade</label>
+            <div class="input">
+                <i class="fa fa-pagelines" aria-hidden="true"></i>
+                <input id="quant" type="number" placeholder="Quantidade">
+            </div>
+            
+            <!-- começo de botões -->
+            <div id="divNavegar">
+                <button  id="btPrimeiro" >Primeiro</button>
+                <button  id="btProximo" >Proximo</button>
+                <button  id="btAnterior" >Anterior</button>
+                <button  id="btUltimo" >Ultimo </button>
+            </div>
+            <div id="divComando">
+               <button  id="btIncluir" >Incluir</button>
+               <button  id="btExcluir" >Excluir</button>
+               <button  id="btAlterar" >Alterar</button>
+               <button  id="btSair" >Sair</button>
+           </div>
+           <div id="divAviso">
+           </div>
+                 <div id="divDialogo" hidden>
+                <button  id="btOk" >Ok</button>
+                <button  id="btCancelar" >Cancelar</button>
+                </div>
+
+            </div>
+
+        </form>
+        <!-- final de Formulario -->
+    </div>
+    
+</body>
+
+<script src="https://kit.fontawesome.com/723f0cb31d.js" crossorigin="anonymous"></script>
+</html>
