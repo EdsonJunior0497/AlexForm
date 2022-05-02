@@ -6,63 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png">
     <link rel="stylesheet" href="./style.css">
-    <title>Biblioteca</title>
+    <title>Cadastro de livros</title>
 </head>
 <body>
 
-    <div id="form">
-        <form action="">
-            <h2 class="title">Cadastro de livros</h2>
-
-            <label for="isbn">ISBN</label>
-            <div class="input">
-                <i class="fa-solid fa-book"></i>
-                <input id="isbn" type="text " placeholder="ISBN">
-            </div>
-
-            <label for="name">Nome</label>
-            <div class="input">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <input  id="name" type="text" placeholder="Nome">
-            </div>
-
-            <label for="pag">Pagina</label>
-            <div class="input">
-                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                <input  id="pag"type="text" placeholder="Pagina">
-            </div>
-
-            <label for="quant">Quantidade</label>
-            <div class="input">
-                <i class="fa fa-pagelines" aria-hidden="true"></i>
-                <input id="quant" type="number" placeholder="Quantidade">
-            </div>
-            
-            <!-- começo de botões -->
-            <div id="divNavegar">
-                <button  id="btPrimeiro" >Primeiro</button>
-                <button  id="btProximo" >Proximo</button>
-                <button  id="btAnterior" >Anterior</button>
-                <button  id="btUltimo" >Ultimo </button>
-            </div>
-            <div id="divComando">
-               <button  id="btIncluir" >Incluir</button>
-               <button  id="btExcluir" >Excluir</button>
-               <button  id="btAlterar" >Alterar</button>
-               <button  id="btSair" >Sair</button>
-           </div>
-           <div id="divAviso">
-           </div>
-                 <div id="divDialogo" hidden>
-                <button  id="btOk" >Ok</button>
-                <button  id="btCancelar" >Cancelar</button>
+    <section>
+            <form action="#" method="GET">
+                <h1>Cadastro de Livros</h1>
+                <fieldset>
+                    <div class="container">
+                        <input type ="text" id="ISBN" autofocus disabled="true">
+                        <label>ISBN</label>
+                    </div>
+                    <div class="container">
+                        <input type ="text" id="Nome" disabled="true">
+                        <label>Nome do Livro</label>
+                    </div>
+                    <div class="container">
+                        <input type ="number" id="Pagina" disabled="true">
+                        <label>Numero de Paginas</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="container">
+                        <input type="number" id="Quantidade" disabled="true">
+                        <label>Quantidade</label>
+                    </div>
+                </fieldset>
+                <div id="divNavegar">
+                    <button id="btPrimeiro">Primeiro</button>
+                    <button id="btAnterior">Anterior</button>
+                    <button id="btProximo" >Proximo</button>
+                    <button id="btUltimo"  >Ultimo </button>
                 </div>
-
-            </div>
-
-        </form>
-        <!-- final de Formulario -->
-    </div>
+                <div id="divComando">
+                    <button id="btIncluir">Incluir</button>
+                    <button id="btAlterar">Alterar</button>
+                    <button id="btExcluir">Excluir</button>
+                    <button id="btSair"   >Sair</button>
+                </div>
+                <div id="divAviso"></div>
+                <div id="divDialogo" hidden>
+                    <button id="btOk">Ok</button>
+                    <button id="btCancelar">Cancelar</button>
+                </div>
+            </form>
+        </section>
+        <script src="./CtrlSessao.js" type="module"></script>
     
 </body>
 
